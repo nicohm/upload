@@ -1,6 +1,7 @@
 ---
 title: "Iris K-Means Clustering"
-output: 
+output:
+  #html_document: default
   flexdashboard::flex_dashboard:
     orientation: columns
     social: menu
@@ -10,7 +11,10 @@ runtime: shiny
 
 ```{r global, include=FALSE}
 # load data in 'global' chunk so it can be shared by all users of the dashboard
+#knitr::opts_chunk$set(echo = TRUE)
 library(datasets)
+library(flexdashboard)
+library(shiny)
 data(iris)
 ```
 
